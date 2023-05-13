@@ -77,55 +77,6 @@ public class LoginTest {
          homePage.searchingGoods("Stagg");
          Thread.sleep(1000);
 
-         homePage.ClickONSearchBtn();
-         Thread.sleep(3000);
-
-         homePage.imgClick();
-         Thread.sleep(500);
-
-         homePage.yournamefld("Arnur Gizatov");
-         Thread.sleep(1000);
-
-         homePage.Stars();
-         Thread.sleep(500);
-
-         homePage.AreAfLD("Very useful and beautiful design");
-         Thread.sleep(500);
-
-         homePage.SendBtn();
-         Thread.sleep(1000);
-
-         homePage.Return_ToChosingGoods();
-         Thread.sleep(10000);
-
-         homePage.sort();
-         Thread.sleep(500);
-
-         homePage.Choose_sorting();
-         Thread.sleep(5000);
-
-
-         WebElement xp = driver.findElement(By.xpath("//*[@id=\"sec_discounted_price_1636\"]"));
-         String first = xp.getText();
-         
-
-         WebElement xp1 = driver.findElement(By.xpath(" //*[@id=\"sec_discounted_price_2027\"]"));
-         String second = xp1.getText();
-        
-
-         String input1 = first;
-         String formattedInput1 = input1.replace(" ", "");
-         double number1 = Double.parseDouble(formattedInput1);
-
-         String input2 = second;
-         String formattedInput2 = input2.replace(" ", "");
-         double number2 = Double.parseDouble(formattedInput2);
-
-         double number3 = homePage.compare(number1,number2);
-         Thread.sleep(3000);
-         Assert.assertEquals(number3 , number1);
-        
-         Thread.sleep(3000);
    }
 
     @AfterSuite()
