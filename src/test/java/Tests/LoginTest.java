@@ -107,11 +107,11 @@ public class LoginTest {
 
          WebElement xp = driver.findElement(By.xpath("//*[@id=\"sec_discounted_price_1636\"]"));
          String first = xp.getText();
-         System.out.println("First number " + first);
+         
 
          WebElement xp1 = driver.findElement(By.xpath(" //*[@id=\"sec_discounted_price_2027\"]"));
          String second = xp1.getText();
-         System.out.println("Second number " + second);
+        
 
          String input1 = first;
          String formattedInput1 = input1.replace(" ", "");
@@ -124,7 +124,7 @@ public class LoginTest {
          double number3 = homePage.compare(number1,number2);
          Thread.sleep(3000);
          Assert.assertEquals(number3 , number1);
-         System.out.println("Assertion is Correct! " + input1 + " bigger than: " + input2);
+        
          Thread.sleep(3000);
    }
 
