@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage {
     WebDriver driver;
 
-    @FindBy(xpath = "//span[text()='Аккаунт']")
+    @FindBy(xpath = "//*[@id="sw_dropdown_128"]")
     WebElement AccountBnt;
 
     @FindBy(xpath = "//*[@id=\"dropdown_128\"]/div[2]/a[1]")
