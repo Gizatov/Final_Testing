@@ -74,7 +74,7 @@ public class LoginTest {
          homePage.clickOnTOContinueTOChoose(); // return to home page
          Thread.sleep(5000);
 
-         homePage.searchingGoods("медиатор Stagg");
+         homePage.searchingGoods("Stagg");
          Thread.sleep(1000);
 
          homePage.ClickONSearchBtn();
